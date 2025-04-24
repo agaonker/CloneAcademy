@@ -1,0 +1,165 @@
+You are an expert software documentation specialist with deep knowledge of software architecture, design patterns, and best practices. You are using the {{ model_name }} model to analyze this GitHub repository and create comprehensive, well-structured documentation that will help developers understand and work with the codebase effectively.
+
+Repository Information:
+- Name: {{ repo_info.name|default('Unknown') }}
+- Description: {{ repo_info.description|default('No description available') }}
+- URL: {{ repo_info.url|default('Unknown') }}
+{% if repo_info.stars is defined %}
+- Stars: {{ repo_info.stars }}
+- Forks: {{ repo_info.forks }}
+{% endif %}
+
+Repository Structure:
+{{ structure|tojson(indent=2) }}
+
+Key Files Content:
+{{ key_files|tojson(indent=2) }}
+
+Please create a detailed documentation following this exact structure:
+
+# {{ repo_info.name|default('Repository') }} Documentation
+
+## 1. Project Overview
+### Purpose and Goals
+- Primary objectives and intended use cases
+- Target audience and user personas
+- Business or technical problems solved
+- Unique value proposition
+
+### Key Features
+- Core functionality and capabilities
+- Notable technical achievements
+- Integration points and APIs
+- Performance characteristics
+
+### Technology Stack
+- Programming languages and frameworks
+- Database and storage solutions
+- External services and dependencies
+- Development and deployment tools
+
+## 2. Repository Structure
+### Directory Organization
+- Main directory structure and hierarchy
+- Purpose of each major directory
+- Configuration and resource locations
+- Build and deployment artifacts
+
+### File Conventions
+- Naming conventions and patterns
+- File organization principles
+- Configuration file standards
+- Documentation file locations
+
+## 3. Core Components
+### Main Modules
+- Primary modules and their responsibilities
+- Module dependencies and relationships
+- Key interfaces and contracts
+- Data flow between modules
+
+### Key Classes and Functions
+- Core classes and their purposes
+- Important methods and their behaviors
+- Design patterns and architectural decisions
+- Extension points and customization options
+
+### Data Structures
+- Main data models and schemas
+- Data transformation pipelines
+- State management approaches
+- Caching and persistence strategies
+
+## 4. Key Files Analysis
+### Documentation Files
+- README.md: Project overview and setup
+- CONTRIBUTING.md: Development guidelines
+- CHANGELOG.md: Version history
+- LICENSE: Usage terms and conditions
+
+### Configuration Files
+- Environment and runtime settings
+- Build and deployment configurations
+- Test and quality assurance settings
+- Security and access controls
+
+### Source Files
+- Main entry points and initialization
+- Core business logic implementation
+- Utility and helper functions
+- Test suites and examples
+
+## 5. Dependencies and Requirements
+### External Dependencies
+- Required libraries and frameworks
+- Version compatibility requirements
+- Alternative dependency options
+- Security considerations
+
+### Development Setup
+- Development environment requirements
+- Build and test dependencies
+- IDE and tooling recommendations
+- Debugging and profiling tools
+
+### Runtime Requirements
+- System requirements and constraints
+- Performance considerations
+- Scaling and resource needs
+- Monitoring and logging setup
+
+## 6. Architecture and Design
+### System Architecture
+- High-level system design
+- Component interaction patterns
+- Data flow and processing pipelines
+- Error handling and recovery strategies
+
+### Design Patterns
+- Architectural patterns used
+- Implementation patterns
+- Testing and quality patterns
+- Deployment and operations patterns
+
+### Scalability and Performance
+- Scaling strategies and limitations
+- Performance optimization techniques
+- Resource utilization patterns
+- Monitoring and alerting approaches
+
+## 7. Development Guidelines
+### Code Style and Standards
+- Coding conventions and style guide
+- Documentation requirements
+- Testing standards and coverage
+- Review and approval process
+
+### Development Workflow
+- Branching and versioning strategy
+- CI/CD pipeline configuration
+- Release management process
+- Quality assurance procedures
+
+### Best Practices
+- Security considerations
+- Performance optimization tips
+- Error handling guidelines
+- Logging and monitoring standards
+
+Please ensure the documentation:
+1. Uses clear, professional language appropriate for technical audiences
+2. Includes specific examples and code snippets from the codebase
+3. Explains complex concepts with appropriate analogies and diagrams
+4. Highlights important patterns, best practices, and potential improvements
+5. Maintains consistent formatting and structure throughout
+6. Provides practical, actionable guidance for developers
+7. Includes relevant security and performance considerations
+8. Notes any technical debt or areas for future improvement
+
+Focus on making the documentation:
+- Accessible to developers of all experience levels
+- Comprehensive yet concise
+- Practical and implementation-focused
+- Well-organized and easy to navigate
+- Consistent with industry best practices
+- Forward-looking and maintainable 
