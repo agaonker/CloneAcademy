@@ -2,17 +2,15 @@
 
 CloneAcademy is an AI-powered tool that automatically generates clear, organized documentation for GitHub repositories.
 
-## Screenshots
+## Example Output
 
-### Main Interface
-<img src="https://raw.githubusercontent.com/agaonker/CloneAcademy/main/docs/samples/ui_screenshot.png" alt="CloneAcademy Interface" width="800"/>
+### Repository Analysis
+![Repository Analysis](docs/samples/1)
+*Screenshot 1: Repository analysis showing the structure and components of a GitHub repository*
 
-*Enter any GitHub repository URL to start the documentation generation process*
-
-### Analysis Output
-<img src="https://raw.githubusercontent.com/agaonker/CloneAcademy/main/docs/samples/analysis_output.png" alt="Analysis Results" width="800"/>
-
-*CloneAcademy automatically infers the codebase structure and generates comprehensive documentation*
+### Generated Documentation
+![Documentation Output](docs/samples/2)
+*Screenshot 2: Example of automatically generated documentation with inferred codebase structure*
 
 ## Features
 
