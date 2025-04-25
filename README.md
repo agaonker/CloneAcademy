@@ -5,11 +5,11 @@ CloneAcademy is an AI-powered tool that automatically generates clear, organized
 ## Example Output
 
 ### Repository Analysis
-![Repository Analysis](docs/samples/1)
+![Repository Analysis](docs/samples/1.png)
 *Screenshot 1: Repository analysis showing the structure and components of a GitHub repository*
 
 ### Generated Documentation
-![Documentation Output](docs/samples/2)
+![Documentation Output](docs/samples/2.png)
 *Screenshot 2: Example of automatically generated documentation with inferred codebase structure*
 
 ## Features
