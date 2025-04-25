@@ -5,11 +5,13 @@ CloneAcademy is an AI-powered tool that automatically generates clear, organized
 ## Screenshots
 
 ### Main Interface
-![CloneAcademy Interface](docs/samples/ui_screenshot.png)
+<img src="https://raw.githubusercontent.com/agaonker/CloneAcademy/main/docs/samples/ui_screenshot.png" alt="CloneAcademy Interface" width="800"/>
+
 *Enter any GitHub repository URL to start the documentation generation process*
 
 ### Analysis Output
-![Analysis Results](docs/samples/analysis_output.png)
+<img src="https://raw.githubusercontent.com/agaonker/CloneAcademy/main/docs/samples/analysis_output.png" alt="Analysis Results" width="800"/>
+
 *CloneAcademy automatically infers the codebase structure and generates comprehensive documentation*
 
 ## Features
