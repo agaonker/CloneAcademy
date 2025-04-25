@@ -12,7 +12,7 @@ CloneAcademy is an AI-powered tool that automatically generates clear, organized
 2. Create a virtual environment and install dependencies:
    ```bash
    uv venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   source .venv/bin/activate  
    uv pip install -e .
    ```
 
@@ -49,16 +49,3 @@ CloneAcademy uses GitHub's public API without authentication, which has the foll
 - 60 requests per hour for unauthenticated requests
 - The application includes built-in rate limiting to stay within these limits
 - For higher rate limits, you can add a GitHub token to your `.env` file
-
-## Development
-
-- Format code:
-  ```bash
-  uv pip install ruff
-  ruff format .
-  ```
-
-- Lint code:
-  ```bash
-  ruff check .
-  ``` 
