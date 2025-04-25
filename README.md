@@ -2,6 +2,25 @@
 
 CloneAcademy is an AI-powered tool that automatically generates clear, organized documentation for GitHub repositories.
 
+## Screenshots
+
+### Main Interface
+![CloneAcademy Interface](docs/samples/ui_screenshot.png)
+*Enter any GitHub repository URL to start the documentation generation process*
+
+### Analysis Output
+![Analysis Results](docs/samples/analysis_output.png)
+*CloneAcademy automatically infers the codebase structure and generates comprehensive documentation*
+
+## Features
+
+- Repository analysis without local cloning
+- Support for public repositories
+- Automatic documentation generation using Gemini AI
+- Key file analysis (README.md, requirements.txt, etc.)
+- Markdown output format
+- Built-in rate limiting for GitHub API
+
 ## Setup
 
 1. Install [uv](https://github.com/astral-sh/uv):
@@ -12,7 +31,7 @@ CloneAcademy is an AI-powered tool that automatically generates clear, organized
 2. Create a virtual environment and install dependencies:
    ```bash
    uv venv
-   source .venv/bin/activate  
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    uv pip install -e .
    ```
 
@@ -34,18 +53,22 @@ Enter a GitHub repository URL in the input field, and CloneAcademy will:
 3. Generate comprehensive documentation
 4. Save the documentation as a Markdown file
 
-## Features
-
-- Repository analysis without local cloning
-- Support for public repositories
-- Automatic documentation generation using Gemini AI
-- Key file analysis (README.md, requirements.txt, etc.)
-- Markdown output format
-- Built-in rate limiting for GitHub API
-
 ## Rate Limiting
 
 CloneAcademy uses GitHub's public API without authentication, which has the following limits:
 - 60 requests per hour for unauthenticated requests
 - The application includes built-in rate limiting to stay within these limits
 - For higher rate limits, you can add a GitHub token to your `.env` file
+
+## Development
+
+- Format code:
+  ```bash
+  uv pip install ruff
+  ruff format .
+  ```
+
+- Lint code:
+  ```bash
+  ruff check .
+  ```
